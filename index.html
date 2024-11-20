@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Client Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="sidebar"> 
+      <div class="user-info">
+        <img src="user-icon.png" alt="User Icon" class="user-icon">
+        <p>Welcome, Mahdia!</p>
+      </div>
+      <button class="compose-btn">Compose</button>
+      <ul class="folder-list">
+        <li>Inbox (1456+)</li>
+        <li>Tagged</li>
+        <li>Important</li>
+        <li>Sent Mail</li>
+        <li>Drafts</li>
+        <li>Trash</li>
+      </ul>
+    </section>
+
+    <section class="search-column"> 
+      <div class="search-bar">
+        <input type="text" placeholder="Search For Emails">
+      </div>
+      <section class="email-list">
+        <div class="email-item">
+          <div class="top-row">
+            <span class="email-sender">LinkedIn</span>
+            <span class="email-time">02:45 PM</span>
+          </div>
+          <p class="email-preview">You have a new connection Request</p>
+        </div>
+        <div class="email-item">
+          <div class="top-row">
+            <span class="email-sender">Michael Scott Daily Quote</span>
+            <span class="email-time">Jul 3, 2024</span>
+          </div>
+          <p class="email-preview">I'm optimistic because everyday I get a...</p>
+        </div>
+        <div class="email-item">
+          <div class="top-row">
+            <span class="email-sender">Lemar Software</span>
+            <span class="email-time">Feb 9, 2024</span>
+          </div>
+          <p class="email-preview">Learn how you can give us money by...</p>
+        </div>
+      </section>
+    </section>
+
+    <main class="main-content">
+      <section class="email-content">
+        <p><strong>To:</strong> taylor@lamarsoftware.io</p>
+        <p><strong>From:</strong> re-reply@theofficenbc.com</p>
+        <h2>Michael Scott Daily Quotes</h2>
+        <p>“Friends joke with one another. ‘Hey, your momma’s dead.’ That’s what friends do.”</p>
+        <p>“It’s a good thing Russia doesn’t exist anymore.”</p>
+        <div class="reply-section">
+          <textarea placeholder="Enter Message..."></textarea>
+          <button class="send-btn">Send Email</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

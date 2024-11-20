@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px; 
+  background-color: #d3cbcb;
+  color: #511a1a;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #b3abab;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.compose-btn {
+  background-color: #4e3b19;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.folder-list {
+  list-style: none;
+}
+
+.folder-list li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Search Column */
+.search-column {
+  background-color: #8b8181;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.email-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.email-item {
+  padding: 0.8rem;
+  border-bottom: 1px solid #555;
+  color: #fff;
+}
+
+.email-item .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-sender {
+  font-weight: bold;
+  color: #fff;
+}
+
+.email-time {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.email-preview {
+  color: #bbb;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-content p {
+  margin-bottom: 1rem;
+}
+
+.reply-section {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.reply-section textarea {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.send-btn {
+  background-color: #2e2109;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .search-column {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
